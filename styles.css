@@ -1076,16 +1076,90 @@ footer {
 /* ---------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 
+.ubicacion-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10%;
+    text-align: center;
+}
 
+.ubicacion iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #D8BFD8;
+}
 
+.contacto {	
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
 
+.contacto-container {	
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: linear-gradient(to right, #D8BFD8, #FADADD);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;	
+}
 
+.contacto-container h2 {
+    text-align: center;
+    color: #a36278;
+    text-shadow: 0px 0px 10px #ec95b2;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #D8BFD8;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contacto input:focus, .contacto textarea:focus {
+    border-color: #C0A0C0;
+    box-shadow: 0px 0px 8px rgba(208, 155, 215, 0.5);
+    outline: none;
+}
+
+.contacto button {
+    background: #a36278;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacto button:hover {
+    background: #C0A0C0;
+}
+
+@media (max-width: 768px) {
+    .ubicacion-contacto {
+        padding: 20px;
+    }
+
+    .ubicacion iframe {
+        height: 250px;
+    }
+}
 
 /* SECCION TRABAJO */
 
 /* ---------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------- */
-
 
 .trabajo {
 	background-image: url('images/city1.png');
@@ -1096,7 +1170,6 @@ footer {
 	padding: 0;
 	text-align: center;
 }
-
 
 .trabajo-content {
 	background: rgba(245, 245, 245, 0.85);
@@ -1165,11 +1238,8 @@ footer {
 	background: linear-gradient(to right, #D8BFD8, #FADADD);
     padding: 30px;
     border-radius: 10px;
-    /* box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3); */
     max-width: 900px;
-    /* border: 1px solid rgba(0, 255, 255, 0.3); */
 }
-
 
 .form-container h2 {
     text-align: center;
@@ -1238,8 +1308,6 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0px 0px 15px #f5b7b1;
 	color: #ec95b2;
 }
-
-/* SECCION TRABAJO */
 
 /* ---------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------- */
