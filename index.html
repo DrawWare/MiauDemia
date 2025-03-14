@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <title>MiauDemia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="navbar"></div> <!-- Aquí se cargará el navbar -->
+
+	<section class="presentation">
+		<div class="presentation-content">
+			<h1 class="title">Dibujamos tu mejor futuro <span>And let's DRAW your growth</span></h1>
+			<p class="subtitle">Te acompañamos con un aprendizaje personalizado para ayudarte a crecer y ser más eficiente.</p>
+		</div>
+	</section>
+	
+	<div class="head-solutions hidden">
+        <h1>📚 Servicios Educativos</h1>
+        <p>Un grupo de profesionales apasionados por la tecnología y el marketing</p>
+    </div>
+	
+	<div class="solutions-cards-container hidden">
+		    <!-- Tarjetas de servicios -->
+			<div class="solutions-cards hidden">
+				<div class="solutions-card">
+					<h3>1️⃣ Clases Personalizadas</h3>
+					<p>💡 Sesiones de 2 horas adaptadas a cada estudiante, enfocadas en secundaria, terciarios y universitarios.</p>
+				</div>
+				<div class="solutions-card">
+					<h3>2️⃣ Preparación para Exámenes</h3>
+					<p>🎯 Refuerzo intensivo para aprobar materias difíciles con comprensión profunda.</p>
+				</div>
+				<div class="solutions-card">
+					<h3>3️⃣ Clases Intensivas Presenciales</h3>
+					<p>⏳ Hasta 4 horas cátedra con recreo y refrigerios, ideal para aprendizaje acelerado.</p>
+				</div>
+				<div class="solutions-card">
+					<h3>4️⃣ Acompañamiento en la Cursada</h3>
+					<p>📖 Seguimiento constante durante el año para mejorar el rendimiento académico.</p>
+				</div>
+			</div>	
+	</div>		
+	
+	<div class="head-materias hidden">
+        <h1 id="materias" >📚 Materias</h1>
+        <p>Un grupo de profesionales apasionados por la tecnología y el marketing</p>
+    </div>
+	
+	<div class="materias-cards-container">
+		<div class="materias-cards">
+			<div class="materia-card" data-bs-toggle="modal" data-bs-target="#modalBasicas">
+				<h4>Basicas</h4>
+			</div>
+			<div class="materia-card" data-bs-toggle="modal" data-bs-target="#modalSociales">
+				<h4>Sociales</h4>
+			</div>
+			<div class="materia-card" data-bs-toggle="modal" data-bs-target="#modalNaturales">
+				<h4>Naturales</h4>
+			</div>
+			<div class="materia-card" data-bs-toggle="modal" data-bs-target="#modalIdioma">
+				<h4>Idioma</h4>
+			</div>
+			<div class="materia-card" data-bs-toggle="modal" data-bs-target="#modalSoftware">
+				<h4>Software IT</h4>
+			</div>
+			<div class="materia-card" data-bs-toggle="modal" data-bs-target="#modalTecnologicas">
+				<h4>Tecnologicas</h4>
+			</div>
+		</div>
+	</div>
+
+	<!-- 🔹 Modales para cada categoría -->
+
+	<!-- Modal Basicas -->
+	<div class="modal fade" id="modalBasicas" tabindex="-1" aria-labelledby="modalBasicasLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm-down">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalBasicasLabel">Materias Básicas</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+		  </div>
+		  <div class="modal-body">
+			<ul>
+			  <li>Matemática</li>
+			  <li>Geometría</li>
+			  <li>Álgebra</li>
+			  <li>Física</li>
+			  <li>Estadística</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Modal Sociales -->
+	<div class="modal fade" id="modalSociales" tabindex="-1" aria-labelledby="modalSocialesLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-fullscreen-sm-down">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalSocialesLabel">Materias Sociales</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+		  </div>
+		  <div class="modal-body">
+			<ul>
+			  <li>Historia</li>
+			  <li>Geografía</li>
+			  <li>Psicología</li>
+			  <li>Filosofía</li>
+			  <li>Ética</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Modal Naturales -->
+	<div class="modal fade" id="modalNaturales" tabindex="-1" aria-labelledby="modalNaturalesLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-fullscreen-sm-down">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalNaturalesLabel">Materias Naturales</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+		  </div>
+		  <div class="modal-body">
+			<ul>
+			  <li>Biología</li>
+			  <li>Química</li>
+			  <li>Ecología</li>
+			  <li>Botánica</li>
+			  <li>Física Ambiental</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Modal Idioma -->
+	<div class="modal fade" id="modalIdioma" tabindex="-1" aria-labelledby="modalIdiomaLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-fullscreen-sm-down">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalIdiomaLabel">Materias de Idioma</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+		  </div>
+		  <div class="modal-body">
+			<ul>
+			  <li>Inglés</li>
+			  <li>Español</li>
+			  <li>Portugués</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Modal Software IT -->
+	<div class="modal fade" id="modalSoftware" tabindex="-1" aria-labelledby="modalSoftwareLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-fullscreen-sm-down">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalSoftwareLabel">Materias de Software IT</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+		  </div>
+		  <div class="modal-body">
+			<ul>
+			  <li>Programación</li>
+			  <li>Sistemas Operativos</li>
+			  <li>Bases de Datos</li>
+			  <li>Modelado de Sistemas</li>
+			  <li>Redes</li>
+			  <li>Arquitectura de Computacion</li>
+			  <li>Inteligencia Artificial</li>
+			  <li>Ingenieria de Software</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Modal Tecnológicas -->
+	<div class="modal fade" id="modalTecnologicas" tabindex="-1" aria-labelledby="modalTecnologicasLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-fullscreen-sm-down">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="modalTecnologicasLabel">Materias Tecnológicas</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+		  </div>
+		  <div class="modal-body">
+			<ul>
+			  <li>Dibujo Tecnico</li>
+			  <li>Robótica</li>
+			  <li>Automatización</li>
+			  <li>Electrónica</li>
+			  <li>Sistemas Embebidos</li>
+			  <li>Energías Renovables</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+
+	
+	<div class="head-team hidden">
+        <h1 id="equipo" >Conoce a Nuestro 🎓 Equipo Educativo</h1>
+        <p>Un grupo de profesionales apasionados por la tecnología y el marketing</p>
+    </div>
+    
+    <section class="team hidden">
+        <div class="member hidden">
+            <h2>📌 Director Académico</h2>
+            <p>Lidera y supervisa la calidad educativa, asegurando métodos de enseñanza eficaces.</p>
+        </div>
+        <div class="member hidden">
+            <h2>📖 Profesor Especialista</h2>
+            <p>Docente experto en ciencias exactas, dedicado a guiar a los estudiantes en su aprendizaje.</p>
+        </div>
+        <div class="member hidden">
+            <h2>🎯 Tutor Académico</h2>
+            <p>Brinda acompañamiento personalizado para mejorar el rendimiento y comprensión de los alumnos.</p>
+        </div>
+        <div class="member hidden">
+            <h2>📚 Diseñador de Material Didáctico</h2>
+            <p>Crea recursos educativos innovadores para facilitar el aprendizaje.</p>
+        </div>
+        <div class="member hidden">
+            <h2>💡 Coach Educativo</h2>
+            <p>Ayuda a desarrollar hábitos de estudio y motivación para el éxito académico.</p>
+        </div>
+        <div class="member hidden">
+            <h2>📊 Analista de Desempeño</h2>
+            <p>Evalúa el progreso de los estudiantes y ajusta estrategias para potenciar su aprendizaje.</p>
+        </div>
+        <div class="member hidden">
+            <h2>📲 Gestor de Plataforma Educativa</h2>
+            <p>Administra herramientas digitales para optimizar la enseñanza y el acceso a materiales.</p>
+        </div>
+    </section>
+	
+	<div class="head-horarios hidden">
+        <h1 id="horario" >Conoce Nuestros Horarios</h1>
+        <p>Un grupo de profesionales apasionados por la tecnología y el marketing</p>
+		<div class="horarios-card">
+			<div class="horario">
+				<h2>📌 Lun a Vie</h2>
+				<p>7hs a 13hs</p>
+				<p>15hs a 23hs</p>
+			</div>
+			<div class="horario">
+				<h2>📌 Sab y Dom</h2>
+				<p>7hs a 13hs</p>
+			</div>
+		</div>		
+		<section class="circular-container hidden">
+			<div class="circular-card hidden">⏰ Mañana</div>
+			<div class="circular-card hidden">🌞 Tarde</div>
+			<div class="circular-card hidden">🌙 Noche</div>
+		</section>		
+    </div>	
+			
+	<div class="vision-container hidden">
+		<div id="vision" class="vision-solapa hidden">
+			<div class="vision-card">
+				<h1 class="vision-title">🎯 Misión</h1>
+				<p class="vision-text">
+					Nuestra misión es clara: brindar educación de calidad a través de clases particulares personalizadas. Nos enfocamos en potenciar el aprendizaje, adaptándonos a las necesidades de cada estudiante y brindando herramientas que los ayuden a alcanzar sus objetivos académicos y personales.
+				</p>
+			</div>
+			<div class="vision-card">
+				<h1 class="vision-title">🚀 Visión</h1>
+				<p class="vision-text">
+					Nos proyectamos como un referente en educación personalizada, ofreciendo un espacio de aprendizaje accesible e innovador. Aspiramos a expandir nuestro impacto, llegando a más estudiantes y transformando su futuro a través del conocimiento, la práctica y el acompañamiento constante.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div> <!-- Aquí se cargará el footer -->
+
+	<script src="script.js"></script>
+</body>
+</html>
