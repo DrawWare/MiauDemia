@@ -234,6 +234,13 @@ body {
     color: #fff;
 }
 
+.texto-wrap {
+    display: block;
+    white-space: pre-line; /* Permite saltos de línea en espacios */
+    text-align: center; /* Centra el texto */
+}
+
+
 /* 🟠 Estilo de los Items del Dropdown */
 .dropdown-item {
     padding: 12px 20px;
@@ -473,11 +480,32 @@ footer {
 	text-align: center;
 }
 
-
 .presentation-content {
 	background: rgba(245, 245, 245, 0.85);
-	padding: 20% 0 ;
+	padding: 20% 0;
 }
+
+/* 📱 Móviles (hasta 480px) */
+@media (max-width: 480px) {
+  .presentation-content {
+    padding: 60% 0 25% 0; /* Ajusta el padding para pantallas pequeñas */
+  }
+}
+
+/* 📲 Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .presentation-content {
+    padding: 40% 0 20% 0; /* Ajuste específico para tablets */
+  }
+}
+
+/* 💻 Escritorio (900px en adelante) */
+@media (min-width: 900px) {
+  .presentation-content {
+    padding: 20% 0 15% 0; /* Ajuste para pantallas grandes */
+  }
+}
+
 
 .presentation-content p {
 	font-weight: bold;
@@ -663,6 +691,10 @@ footer {
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+.modal {
+    top: 20%;
+}
+
 .modal-content {
     background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
     border-radius: 15px;
@@ -722,14 +754,15 @@ footer {
     transform: translateY(-10px);
 }
 
-@media (max-width: 576px) {
-  .modal-content {
-    width: 95%;
-    height: 90vh;
-    border-radius: 15px;
-    overflow-y: auto;
-  }
-}
+/* @media (max-width: 768px) { */
+  /* .modal-content { */
+    /* width: 95%; */
+    /* height: 90vh; */
+    /* border-radius: 15px; */
+    /* overflow-y: auto; */
+  /* } */
+/* } */
+
 .modal-body {
     max-height: 70vh;
     overflow-y: auto;
@@ -1068,6 +1101,27 @@ footer {
 .trabajo-content {
 	background: rgba(245, 245, 245, 0.85);
 	padding: 20% 0 ;
+}
+
+/* 📱 Móviles (hasta 480px) */
+@media (max-width: 480px) {
+  .trabajo-content {
+    padding: 60% 0 25% 0; /* Ajusta el padding para pantallas pequeñas */
+  }
+}
+
+/* 📲 Tablets (481px - 1024px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .trabajo-content {
+    padding: 40% 0 20% 0; /* Ajuste específico para tablets */
+  }
+}
+
+/* 💻 Escritorio (1025px en adelante) */
+@media (min-width: 900px) {
+  .trabajo-content {
+    padding: 20% 0 15% 0; /* Ajuste para pantallas grandes */
+  }
 }
 
 .trabajo-content p {
