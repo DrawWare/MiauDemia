@@ -721,15 +721,26 @@ footer {
     transform: translateY(-10px);
 }
 
+@media (max-width: 576px) {
+  .modal-content {
+    width: 95%;
+    height: 90vh;
+    border-radius: 15px;
+    overflow-y: auto;
+  }
+}
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
 /* ---------------------------------------------------------------------- */
 /*EQUIPO */
 
-/* 🎨 Encabezado del equipo con colores pastel */
 .head-team {
     text-align: center;
 }
 
-/* 👥 Contenedor del equipo */
 .team {
     display: flex;
     flex-wrap: wrap;
@@ -738,7 +749,6 @@ footer {
     padding: 50px 10px;
 }
 
-/* 🌟 Tarjeta de cada miembro */
 .member {
     background: rgba(255, 255, 255, 0.8);
     border: 2px solid rgba(255, 182, 193, 0.6);
@@ -750,7 +760,6 @@ footer {
     animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* 🎤 Nombre del miembro */
 .member h2 {
     font-size: 1.6rem;
     background: linear-gradient(90deg, #FF6F61, #FFD700);
@@ -759,7 +768,6 @@ footer {
     text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);
 }
 
-/* 🏆 Hover con efecto iluminado */
 .member:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
@@ -799,7 +807,6 @@ footer {
 /* ---------------------------------------------------------------------- */
 /* HORARIOS */
 
-
 .head-horarios {
     text-align: center;
     padding: 50px 20px;
@@ -811,7 +818,6 @@ footer {
     box-shadow: 0 0 15px rgba(255, 77, 77, 0.3); /* Sombra más roja */
 }
 
-/* 🎨 Estilo del título */
 .head-horarios h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -823,7 +829,6 @@ footer {
     animation: softGlow 1.5s infinite alternate;
 }
 
-/* 📝 Texto descriptivo */
 .head-horarios p {
     font-size: 1.2rem;
     font-weight: 400;
@@ -831,7 +836,6 @@ footer {
     color: rgba(139, 0, 0, 0.8);
 }
 
-/* 📅 Contenedor de horarios */
 .horarios-card {
     display: flex;
     justify-content: center;
@@ -840,7 +844,6 @@ footer {
     margin-top: 20px;
 }
 
-/* 🕒 Tarjetas de horarios */
 .horario {
     background: rgba(255, 200, 220, 0.9);
     padding: 20px 30px;
@@ -881,14 +884,12 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-/* ⏰ Texto del horario */
 .horario p {
     font-size: 1.3rem;
     color: #8d3c3c;
     text-shadow: 0 0 6px rgba(255, 51, 51, 0.5);
 }
 
-/* ✨ Animaciones */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -937,6 +938,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+	flex-wrap: wrap;
     margin: 30px 0 30px 0;
 }
 
@@ -1012,7 +1014,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.vision-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+	}
+
+	.vision-text {
+		font-size: 0.8rem;
+		line-height: 1.2;
+	}
+	
     .vision-container {
+		
         flex-direction: column;
         align-items: center;
     }
