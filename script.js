@@ -47,3 +47,43 @@ document.addEventListener("selectstart", function (event) {
     event.preventDefault();
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggle = document.getElementById("theme-toggle");
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            themeToggle.textContent = "Cambiar a Modo Claro";
+        } else {
+            themeToggle.textContent = "Cambiar a Modo Oscuro";
+        }
+    });
+});
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {        
+            const toast = new bootstrap.Toast(document.getElementById('successToast'));
+            toast.show();
+
+            // Redirige después de que el toast se cierre (opcional, ajusta el tiempo)
+            setTimeout(() => {
+                window.location.href = form.querySelector('[name="_next"]').value;
+            }, 3000); // Redirige después de 3 segundos
+        
+    })
+    .catch(error => {
+        alert('Error: ' + error.message);
+    });
+}
+
